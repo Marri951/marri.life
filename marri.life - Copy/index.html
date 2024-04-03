@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+
+    <head>
+        <!--
+            Purpose: Serve as the home page in Marri's 'about me' style website.
+
+            Author: Marri Taylor
+
+            Date Initialized: 5-12-23 (5th of December 2023)
+            Date Last Editied: 8-12-23 (8th of December 2023)
+        -->
+        <title>Home</title>
+        <meta charset = 'UTF-8'>
+        <link href = 'assets/icons8-resume-32.png' rel = 'icon' type = 'image/x-icon' />
+        <meta name = 'viewport' content = 'width=device-width, initial-scale=1' />
+        <meta name = 'keywords' content = 'Marri, marri, Marri Taylor, marri951, about, who is'>
+        <meta name = 'description' content = "Who is Marri? This page goes over who Marri is and what they've done.">
+        <link href = 'css/layout.css' rel = 'stylesheet' />
+        <link href = 'css/index.css' rel = 'stylesheet' />
+    </head>
+
+    <body>
+        <aside class = 'vertical_nav'>
+            <nav class = 'vertical_nav'>
+                <h3>Navigation:</h3>
+                <ul>
+                    <li><a href = 'index.html'><img id = 'home_icon' src = 'assets/icons8-home-32.png' alt = 'home' /></a></li>
+                    <li><a href = 'resume.html'>Resume</a></li>
+                    <li><a href = 'shove_care.html'>Shove.Care</a></li>
+                    <li><a href = 'renewed_retro.html'>Renewed Retro</a></li>
+                    <li><a href = 'hobbies.html'>Hobbies</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class = 'description'>
+            <h1>Who is Marri?</h1>
+            <p>Great question! Hi, I'm Marri. I'm a high school senior who is dual enrolled at both Lake Superior College and the University of Minnesota Twin Cities.
+                I'm huge techonology fan, and have been tinkering on all sorts of electronics for as long as I can remeber. I run a small online store, renewed retro, and have started
+                work on creating a small non-profit Shove.Care. More personally speaking, I'm deeply enviornmentalist, having gone to protest, exclaimed concerns over sustainabilty to my County's leadership, and I'm vegan.
+                I love making tools with Python, competing in BPA, and competing in as well as running my schools Math League.</p>
+        </section>
+        <figure class = 'description'>
+            <img src = 'assets/zoomed_out_bridge.jpg' alt = "Unfortuntly, the image didn't load! Nevertheless, this would be an image of marri" />
+        </figure>
+        <section class = 'description' id = 'form_contain'>
+            <form action = '#' method = 'post'>
+                <h4>If you'd like:</h4>
+                <p>Enter your info and I'll reach out to you!</p>
+                <div class = 'formRow'>
+                    <label for = 'name'>Name</label>
+                    <input name = 'Name' id = 'name' type = 'text' placeholder = 'first and last name' required/>
+                </div>
+                <div class = 'formRow'>
+                    <label for = 'email'>E-mail</label>
+                    <input name = 'Email' id = 'email' type = 'email' required/>
+                </div>
+                <div class = 'formRow'>
+                    <label for = 'about'>What topic are you wanting a response for?</label><br />
+                    <textarea name = 'about' id = 'about'></textarea>
+                </div>
+                <div class = 'formRow'>
+                    <label for = 'rangeBox'>How urgently do you need a response?</label><br />
+                    Casual
+                    <input name = 'serviceRate' id = 'rangeBox'  type = 'range' min = '0' max = '10' step = '1' value = '5' />
+                    URGENT
+                </div>
+                <input type = 'submit' id = 'submit' value = 'Submit' />
+            </form>
+        </section>
+        <footer>
+            <section id = 'socials'>
+                <a href = 'https://discord.gg/947Af9a35b'><img src = 'assets/icons8-discord-50.png' alt = 'Discord' /></a>
+                <a href = 'mailto:marritaylor00@gmail.com'><img src = 'assets/icons8-gmail-50.png' alt = 'Email' /></a>
+                <a href = 'https://www.linkedin.com/in/maxwell-silver-4a023b2a1'><img src = 'assets/icons8-linkedin-50.png' alt = 'Linkedin' /></a>
+                <a href = 'https://www.ebay.com/usr/renewed-retro'><img src = 'assets/icons8-ebay-50.png' alt = 'Ebay' /></a>
+            </section>
+            <section id = 'disclaimers'>
+                <h6>Home & Favicon & Social Media icons image provided by: <br /><cite><a href = 'https://icons8.com'>icons8.com</a></cite></h6>
+            </section>
+        </footer>
+    </body>
+</html>

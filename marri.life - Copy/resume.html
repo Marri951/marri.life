@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+
+    <head>
+        <!--
+            Purpose: Serve as the resume page, and allow the user to download the resume, within Marri's site
+
+            Author: Marri Taylor
+
+            Date Initialized: 7-12-23 (7th of December 2023)
+            Date Last Editied: 8-12-23 (8th of December 2023)
+        -->
+        <title>Resume</title>
+        <meta charset = 'UTF-8'>
+        <meta name = "viewport" content = 'width=device-width, initial-scale=1'>
+        <link href = 'assets/icons8-resume-32.png' rel = 'icon' type = 'image/x-icon' />
+        <meta name = 'keywords' content = 'Marri, marri, Marri Taylor, marri951, about, who is'>
+        <meta name = 'description' content = "Who is Marri? This page goes over who Marri is and what they've done.">
+        <link href = 'css/layout.css' rel = 'stylesheet' />
+        <link href = 'css/resume.css' rel = 'stylesheet' />
+        <link href = 'css/printed_resume.css' rel = 'stylesheet' media = 'print' />
+        <script type="text/javascript">
+            function printDiv(divName) {
+                var printContents = document.getElementById(divName).innerHTML;
+                w=window.open();
+                w.document.write(printContents);
+                w.print();
+                w.close();
+            }
+        </script>        
+    </head>
+
+    <body>
+        <form id = 'print'>
+            <input type="image" src = 'assets/download.png' alt = 'Click Here to Download!!' onClick="window.print()">
+        </form>
+
+        <figure class = 'description'>
+            <img src = 'assets/copy_of_resume.png' alt = 'Resume failed to load, please contact me at marritaylor00@gmail.com' />
+        </figure>       
+        <section id = 'nav_and_footer'>
+            <aside class = 'vertical_nav'>
+                <nav class = 'vertical_nav'>
+                    <h3>Navigation:</h3>
+                    <ul>
+                        <li><a href = 'index.html'><img id = 'home_icon' src = 'assets/icons8-home-32.png' alt  = 'Home' /></a></li>
+                        <li><a href = 'resume.html'>Resume</a></li>
+                        <li><a href = 'shove_care.html'>Shove.Care</a></li>
+                        <li><a href = 'renewed_retro.html'>Renewed Retro</a></li>
+                        <li><a href = 'hobbies.html'>Hobbies</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            
+            <footer>
+                <section id = 'socials'>
+                    <a href = 'https://discord.gg/947Af9a35b'><img src = 'assets/icons8-discord-50.png' alt = 'Discord' /></a>                    
+                    <a href = 'mailto:marritaylor00@gmail.com'><img src = 'assets/icons8-gmail-50.png' alt = 'Email' /></a>
+                    <a href = 'https://www.linkedin.com/in/maxwell-silver-4a023b2a1'><img src = 'assets/icons8-linkedin-50.png' alt = 'Linkedin' /></a>
+                    <a href = 'https://www.ebay.com/usr/renewed-retro'><img src = 'assets/icons8-ebay-50.png' alt = 'Ebay' /></a>
+                </section>
+                <section id = 'disclaimers'>
+                    <h6>Home & Favicon & Social Media icons image provided by: <br /><cite><a href = 'https://icons8.com'>icons8.com</a></cite></h6>
+                </section>
+            </footer>
+        </section>
+    </body>
+</html>

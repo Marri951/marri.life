@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/*
+    Purpose: serve as the style sheet for, specifically, hobbies.html
+
+    Author: Marri Taylor
+
+    Date Initialized: 9-12-23 (9th of December 2023)
+    Date Last Editied: 9-12-23 (9th of December 2023)
+*/
+
+/* Font Styles for other fonts */
+@font-face {
+    font-family: 'Caveat-Bold';
+    src: url('../assets/Caveat/static/Caveat-Bold.ttf');
+}
+@font-face {
+    font-family: 'Modak';
+    src: url('../assets/Modak/Modak-Regular.ttf');
+}
+
+
+h1.modak {
+    font-family: 'Modak';
+}
+
+h1.cav-bold {
+    font-family: 'Caveat-Bold';
+}
+
+
+/* Flex Styles */
+div.hobby_fig_and_text {
+    display: flex;
+    flex: 1 0 90%;
+    flex-flow: row wrap;
+}
+
+section.vertical_nav {
+    text-align: center;
+}
+
+section.vertical_nav ol {
+    margin-top: 5px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+section.vertical_nav h1 {
+    margin-bottom: 10px;
+}
+
+section#overflow {
+    overflow: auto;
+    max-width: 100%;
+}
+
+div.bpa figure img{
+    width: 520px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+div.bpa figure {
+    margin: 0px;
+    max-width: 100%;
+}
+
+div#volenteering figure a {
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+div.bpa section.bpa_contain section {
+    overflow: auto;
+    padding: 0px;
+    max-width: 100%;
+}
+
+div.bpa section.bpa_contain {
+    padding: 10px;
+    max-width: 92%;
+    padding: 10px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+div.bpa {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+figcaption {
+    margin-top: 10px;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+figcaption p {
+    margin: 0px;
+}
+
+img#tech_img {
+    filter: saturate(1.1);
+}
+
+
+/* Reordering content based on the 800px barier */
+
+@media screen and (min-width: 800px) {
+    section.over_800 {
+        display: block;
+    }
+
+    section.under_800 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section.over_800 {
+        display: none;
+    }
+
+    section.under_800 {
+        display: block;
+    }
+
+    div.bpa figure {
+        flex: 1 0 80%;
+    }
+}

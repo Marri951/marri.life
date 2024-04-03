@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+
+    <head>
+        <!--
+            Purpose: Serve as the page for describing the small online store that Marri runs in Marri's 'about me' style website.
+
+            Author: Marri Taylor
+
+            Date Initialized: 8-12-23 (8th of December 2023)
+            Date Last Editied: 8-12-23 (8th of December 2023)
+        -->
+        <title>Renewed Retro</title>
+        <meta charset = 'UTF-8'>
+        <link href = 'assets/icons8-resume-32.png' rel = 'icon' type = 'image/x-icon' />
+        <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0' />
+        <meta name = 'keywords' content = 'Marri, marri, Marri Taylor, marri951, about, who is'>
+        <meta name = 'description' content = "Who is Marri? This page goes over who Marri is and what they've done.">
+        <link href = 'css/layout.css' rel = 'stylesheet' />
+        <link href = 'css/renewed_retro.css' rel = 'stylesheet' />
+    </head>
+
+    <body>
+        <aside class = 'vertical_nav'>
+            <nav class = 'vertical_nav'>
+                <h3>Navigation:</h3>
+                <ul>
+                    <li><a href = 'index.html'><img id = 'home_icon' src = 'assets/icons8-home-32.png' alt = 'Home' /></a></li>
+                    <li><a href = 'resume.html'>Resume</a></li>
+                    <li><a href = 'shove_care.html'>Shove.Care</a></li>
+                    <li><a href = 'renewed_retro.html'>Renewed Retro</a></li>
+                    <li><a href = 'hobbies.html'>Hobbies</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class = 'description'>
+            <h1 class = 'center'>Renewed Retro</h1>
+            <h4 class = 'center'>What is it?</h4>
+            <p>Renewed Retro was formed once I had gotten fully engrossed in the world of tech repair, primarily old Gameboys. 
+                I needed to have repair parts on hand, so I would no longer have to wait for shipping times. Meaning that Renewed Retro is essentially a place for me 
+                to sell repair parts I'm not using as well as an refurbished or moddified systems that I finish.</p>
+        </section>
+        <section class = 'description video'>
+            <video controls>
+                <source src = 'assets/description_renewedretro.mp4' type = 'video/mp4' />
+                <track src = 'assets/subs_renewed_retro.vtt' kind = 'subtitles' srclang = 'en' />
+                <p>Update your browser for video playback support.</p>
+            </video>
+        </section>
+        <section class = 'description' id = 'form'>
+            <form action = '#' method = 'post'>
+                <h4>Select item for profitabilty.</h4>
+                 
+                <h5>Pick Item:</h5>
+                <label for = 'gbaCase' class = 'item'>GameBoy Advanced (Housing)</label>
+                <input class = 'item' id = 'gbaCase' value = 'gbaCase' name = 'item' type = 'radio' />
+                <br />
+                <label for = 'gbpCase' class = 'item'>GameBoy Pocket (Housing)</label>
+                <input class = 'item' id = 'gbpCase' value = 'gbpCase' name = 'item' type = 'radio' />
+                <br />
+                <label for = 'gbcCase' class = 'item'>GameBoy Color (Housing)</label>
+                <input class = 'item' id = 'gbcCase' value = 'gbcCase' name = 'item' type = 'radio' />
+                <br />
+                <label for = 'gbpMod' class = 'item'>GameBoy Pocket (Moddified)</label>
+                <input class = 'item' id = 'gbpMod' value = 'gbpMod' name = 'item' type = 'radio' />
+                <br />
+                <label for = 'gbpRestore' class = 'item'>GameBoy Pocket (Restoration)</label>
+                <input class = 'item' id = 'gbpRestore' value = 'gbpRestore' name = 'item' type = 'radio' />
+                <br />
+                <label for = 'wiiRestore' class = 'item'>Wii (Restoration)</label>
+                <input class = 'item' id = 'wiiRestore' value = 'wiiRestore' name = 'item' type = 'radio' />
+                <br />
+                <!-- Wheather or not the item has Conductive Pads *only shows when the option is acutally available-->
+                <label for = 'bPad' class = 'buttonPad'>W/ Conductive Pads?</label>
+                <input class = 'buttonPad' id = 'bPad' type = 'checkbox'/>
+    
+                <table>
+                    <thead>
+                        <tr><th>Break Down of Costs:</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><th>Shipping Cost:</th>
+                            <td class = 'gba'>$3.25</td>
+                            <td class = 'gbp'>$3.25</td>
+                            <td class = 'gbc'>$3.25</td>
+                            <td class = 'gbp_Rest'>$3.25</td>
+                            <td class = 'gbp_Mod'>$3.45</td>
+                            <td class = 'wii_Rest'>$10.61</td>
+                        </tr>
+    
+                        <tr><th>Packing Cost:</th>
+                            <td class = 'gba'>$0.50</td>
+                            <td class = 'gbp'>$0.50</td>
+                            <td class = 'gbc'>$0.50</td>
+                            <td class = 'gbp_Rest'>$0.60</td>
+                            <td class = 'gbp_Mod'>$0.60</td>
+                            <td class = 'wii_Rest'>$1.70</td>
+                        </tr>
+    
+                        <tr><th>Parts Cost:</th>
+                            <td class = 'gba'>$4.53</td>
+                            <td class = 'gba_pad'>+ $0.32</td>
+                            <td class = 'gbp'>$6.35</td>
+                            <td class = 'gbp_pad'>+ $0.28</td>
+                            <td class = 'gbc'>$5.44</td>
+                            <td class = 'gbp_Rest'>$34.99</td>
+                            <td class = 'gbp_Mod'>$63.98</td>
+                            <td class = 'wii_Rest'>$75.00</td>
+                        </tr>
+    
+                        <tr><th>Ebay Fees:</th>
+                            <td class = 'gba'>$2.02</td>
+                            <td class = 'gbp'>$2.34</td>
+                            <td class = 'gbc'>$2.16</td>
+                            <td class = 'gbp_Rest'>$8.68</td>
+                            <td class = 'gbp_Mod'>$17.39</td>
+                            <td class = 'wii_Rest'>$21.06</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class = 'only_show_padding'><th>Total Cost:</th>
+                            <td class = 'gba'>$10.30</td>
+                            <td class = 'gba_pad'>$10.62</td>
+                            <td class = 'gbp'>$12.44</td>
+                            <td class = 'gbp_pad'>$12.72</td>
+                            <td class = 'gbc'>$11.35</td>
+                            <td class = 'gbp_Rest'>$38.84</td>
+                            <td class = 'gbp_Mod'>$85.42</td>
+                            <td class = 'wii_Rest'>$108.37</td>
+                        </tr>
+    
+                        <tr class = 'show_both'><th>Charged Price:</th>
+                            <td class = 'gba'>$9.71</td>
+                            <td class = 'gba_pad'>+ $1.99</td>
+                            <td class = 'gbp'>$13.80</td>
+                            <td class = 'gbp_pad'>+ $1.99</td>
+                            <td class = 'gbc'>$14.79</td>
+                            <td class = 'gbp_Rest'>$64.94</td>
+                            <td class = 'gbp_Mod'>$142.50</td>
+                            <td class = 'wii_Rest'>$159.37</td>
+                        </tr>
+    
+                        <tr class = 'show_both'><th>Charged Shipping:</th>
+                            <td class = 'gba'>$3.99</td>
+                            <td class = 'gbp'>$1.99</td>
+                            <td class = 'gbc'>$3.99</td>
+                            <td class = 'gbp_Rest'>$5.99</td>
+                            <td class = 'gbp_Mod'>$5.99</td>
+                            <td class = 'wii_Rest'>$15.99</td>
+                        </tr>
+    
+                        <tr class = 'only_show_padding'><th>Revenue:</th>
+                            <td class = 'gba'>$13.70</td>
+                            <td class = 'gba_pad'>$15.69</td>
+                            <td class = 'gbp'>$15.79</td>
+                            <td class = 'gbp_pad'>$17.78</td>
+                            <td class = 'gbc'>$18.78</td>
+                            <td class = 'gbp_Rest'>$70.93</td>
+                            <td class = 'gbp_Mod'>$148.49</td>
+                            <td class = 'wii_Rest'>$175.36</td>
+                        </tr>
+    
+                        <tr class = 'only_show_padding' id = 'profit'><th>Profit:</th>
+                            <td class = 'gba'>$3.40</td>
+                            <td class = 'gba_pad'>$5.07</td>
+                            <td class = 'gbp'>$3.35</td>
+                            <td class = 'gbp_pad'>$5.06</td>
+                            <td class = 'gbc'>$7.43</td>
+                            <td class = 'gbp_Rest'>$32.09</td>
+                            <td class = 'gbp_Mod'>$63.07</td>
+                            <td class = 'wii_Rest'>$66.99</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </form>
+        </section>
+        <footer>
+            <section id = 'socials'>
+                <a href = 'https://discord.gg/947Af9a35b'><img src = 'assets/icons8-discord-50.png' alt = 'Discord' /></a>
+                <a href = 'mailto:marritaylor00@gmail.com'><img src = 'assets/icons8-gmail-50.png' alt = 'Email' /></a>
+                <a href = 'https://www.linkedin.com/in/maxwell-silver-4a023b2a1'><img src = 'assets/icons8-linkedin-50.png' alt = 'Linkedin' /></a>
+                <a href = 'https://www.ebay.com/usr/renewed-retro'><img src = 'assets/icons8-ebay-50.png' alt = 'Ebay' /></a>
+            </section>
+            <section id = 'disclaimers'>
+                <h6>Home & Favicon & Social Media icons image provided by: <br /><cite><a href = 'https://icons8.com'>icons8.com</a></cite></h6>
+            </section>
+        </footer>
+    </body>
+</html>

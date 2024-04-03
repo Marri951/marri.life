@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/*
+    Purpose: serve as the style sheet for, specifically, resume.html
+
+    Author: Marri Taylor
+
+    Date Initialized: 7-12-23 (7th of December 2023)
+    Date Last Editied: 8-12-23 (8th of December 2023)
+*/
+
+
+
+/* styles for print form */
+form#print {
+    background: rgba(251, 251, 251, 0.7);
+    border-radius: 10px;
+    margin: 15px;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 10 0 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+form#print input {
+    max-height: 50px;
+}
+
+/* specific styles for nav bar */
+
+aside.vertical_nav, nav.vertical_nav {
+    max-height: 350px;
+}
+
+/* specific for the resume image */
+figure img {
+    width: 98%;
+}
+
+/* specifc flex styles to place nav and footer in different locations */
+footer {
+    flex: 1 0 60%;
+    flex-flow: column nowrap;
+    max-height: 220px;
+}
+
+section#nav_and_footer {
+    flex: 1 0 300px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+@media screen and (max-width: 1200px){
+    body {
+        padding-bottom: 15px;    
+    }
+
+    footer {
+        flex: 1 0 30%;
+        flex-flow: column nowrap;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    aside {
+        flex: 1 0 60%;
+    }
+
+    figure.description {
+        flex: 10 0 90%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    section#nav_and_footer {
+        flex-flow: row nowrap;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section#nav_and_footer {
+        flex-flow: column nowrap;
+    }
+}

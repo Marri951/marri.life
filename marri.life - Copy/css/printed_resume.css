@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/*
+    Purpose: serve as the style sheet for, specifically, resume.html when printing
+
+    Author: Marri Taylor
+
+    Date Initialized: 7-12-23 (7th of December 2023)
+    Date Last Editied: 8-12-23 (8th of December 2023)
+*/
+
+
+@page {
+    margin: 0in;
+    padding: 0in;
+}
+
+* {
+    display: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer {
+    display: none;
+}
+
+html, body, figure, figure img {
+    display: block;
+    margin-top: -10px;
+    filter: grayscale(1);
+}

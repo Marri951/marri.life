@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/*
+    Purpose: serve as the style sheet for, specifically, shove_care.html
+
+    Author: Marri Taylor:
+
+    Date Initialized: 8-12-23 (5th of December 2023)
+    Date Last Edited: 9-12-23 (9th of December 2023)
+*/
+
+
+/* basic styles */
+
+section#list h3 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+dt {
+    margin-top: 10px;
+}
+
+section#list {
+    padding-right: 10px;
+
+}
+
+/* table styles */
+section#table {
+    flex: 1 0 540px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+div#container_for_overflow {
+    overflow: auto;
+    max-width: 100%;
+    border: 2px solid rgb(64, 64, 64);
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    margin-bottom: 10px;
+    min-width: 100%;
+}
+table * {
+    border: 2px solid rgb(64, 64, 64);
+    border-radius: 5px;
+}
+
+th {
+    font-family: 'Nunito-Regular';
+}
+
+.development {
+    background-color: rgb(173, 196, 240);
+    font-family: 'Nunito-Light';
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+/* video styles note that I decided to swap this video for an audio element */
+section.video  audio {
+    width: 95%;
+    margin: auto;
+    display: block;
+    border-radius: 5px; 
+    filter:invert(1);
+}
+
+div#audio_contain {
+    padding: 5px;
+    background: linear-gradient(to left, #d9bae8, rgb(165, 198, 250));
+    border-radius: 5px;
+}
+
+section.video {
+    padding-right: 10px;
+}
+
+/* flex for video */
+
+section.video {
+    flex: 10 0 60%;
+}
+
+@media screen and (max-width: 700px) {
+    section#table {
+        flex: 1 0 70%;
+    }
+}

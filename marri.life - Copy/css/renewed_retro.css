@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+/*
+    Purpose: serve as the style sheet for, specifically, renewed_retro.html
+
+    Author: Marri Taylor
+
+    Date Initialized: 7-12-23 (7th of December 2023)
+    Date Last Editied: 8-12-23 (8th of December 2023)
+*/
+
+
+/* basic styles*/
+
+section.description h1 {
+    margin-bottom: 0px;
+}
+
+section.description h4 {
+    margin-top: 5px;
+    padding-top: 0px;
+}
+
+section.video video {
+    object-fit: cover;
+    width: 95%;
+    height: 95%;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+/* flex for video */
+
+section.video {
+    flex: 10 0 80%;
+}
+
+
+
+/*=========================
+Styles for Interactive form
+=========================*/
+
+/*
+Base Styles
+*/
+form {
+    max-width: 360px;
+}
+
+section#form {
+    max-width: 370px;
+}
+
+td {
+    display: none;
+    font-family: 'Nunito-Regular';
+    height: 1.5rem;
+}
+
+th {
+    font-family: 'Nunito-Light';
+    height: 1.5rem;
+}
+
+.buttonPad {
+    display: none;
+}
+
+form h4 {
+    margin-bottom: 0px;
+}
+
+form h5 {
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+form label {
+    font-family: 'Nunito-Light';
+}
+
+table {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#profit * {
+    border-top: 2.5px solid rgb(64, 64, 64);
+}
+
+
+/*
+Styles that are only single parted / only reliant on self 
+and have nothing to do with conductive pads
+*/
+input#gbcCase:checked ~ table td.gbc {
+    display: block;
+}
+
+input#gbpMod:checked ~ table td.gbp_Mod {
+    display: block;
+}
+
+input#wiiRestore:checked ~ table td.wii_Rest {
+    display: block;
+}
+
+input#gbpRestore:checked ~ table td.gbp_Rest {
+    display: block;
+}
+
+
+/*
+Making the conductive pad question appear conditionally
+*/
+input#gbaCase:checked ~ .buttonPad, input#gbpCase:checked ~ .buttonPad {
+    display: block;
+}
+
+
+/*
+Displaying data cells based on the relation between Conductive Pad selection 
+and the items that can have conductive pads
+*/
+input#gbaCase:checked ~ table tbody td.gba, 
+input#gbaCase:checked ~ input.buttonPad:checked ~ table td.gba_pad, 
+input#gbaCase:checked ~ input.buttonPad:not(:checked) ~ table tfoot td.gba,
+input#gbaCase:checked ~ input.buttonPad:checked ~ table tfoot tr.only_show_padding td.gba_pad, 
+input#gbaCase:checked ~ input.buttonPad:checked ~ table tfoot tr.show_both td.gba,
+input#gbpCase:checked ~ table tbody td.gbp, 
+input#gbpCase:checked ~ input.buttonPad:checked ~ table td.gbp_pad, 
+input#gbpCase:checked ~ input.buttonPad:not(:checked) ~ table tfoot td.gbp,
+input#gbpCase:checked ~ input.buttonPad:checked ~ table tfoot tr.only_show_padding td.gbp_pad, 
+input#gbpCase:checked ~ input.buttonPad:checked ~ table tfoot tr.show_both td.gbp {
+    display: block;
+}
+/* side note ~ took about 5 hours to get this working */
+
+@media screen and (max-width: 1000px) {
+    section#form {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    footer {
+        flex-flow: column nowrap;
+        flex: 10 0 20%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+@media screen and (min-width: 1200px) {
+    section.video {
+        flex: 10 0 60%;
+    }
+    
+}
+@media screen and (max-width: 450px) {
+    section#form {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 400px) {
+    section#form * {
+        font-size: 0.9rem;
+    }
+}

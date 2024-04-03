@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+/*
+    Purpose: serve as the general style layout for all pages within Marri's site
+
+    Author: Marri Taylor
+
+    Date Initialized: 5-12-23 (5th of December 2023)
+    Date Last Editied: 9-12-23 (9th of December 2023)
+*/
+
+
+@font-face {
+    font-family: 'Nunito-Medium';
+    src: url('../assets/Nunito/static/Nunito-Medium.ttf');
+}
+@font-face {
+    font-family: 'Nunito-Light';
+    src: url('../assets/Nunito/static/Nunito-Light.ttf');
+}
+@font-face {
+    font-family: 'Nunito-Bold';
+    src: url('../assets/Nunito/static/Nunito-Bold.ttf');
+}
+@font-face {
+    font-family: 'Nunito-ExtraBold';
+    src: url('../assets/Nunito/static/Nunito-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'Nunito-SemiBold';
+    src: url('../assets/Nunito/static/Nunito-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Nunito-Regular';
+    src: url('../assets/Nunito/static/Nunito-Regular.ttf');
+}
+@font-face {
+    font-family: 'Nunito-ExtraLight';
+    src: url('../assets/Nunito/static/Nunito-ExtraLight.ttf');
+}
+@font-face {
+    font-family: 'Caveat';
+    src: url('../assets/Caveat/Caveat-VariableFont_wght.ttf');
+}
+
+
+/*==========
+Basic Styles
+===========*/
+
+html {
+    background-color: #9ad09f;
+}
+
+body {
+    background: rgba(251, 251, 251, 0.6);
+    border-radius: 25px;
+    box-sizing: content-box;
+    padding-top: 15px;
+    margin: 15px 20px;
+    box-shadow: 0px 0px 20px 10px white;
+}
+
+footer {
+    border-color: hsla(111deg, 7%, 70%, 0.8);
+    border-width: 5px;
+    border-style: solid;
+    margin: 15px;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+
+footer section#disclaimers {
+    text-align: center;
+}
+
+footer section {
+    background: rgba(251, 251, 251, 0.7);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+footer section#socials a {
+    display: block;
+    margin: 5px auto;
+}
+
+footer section#socials a img {
+    width: 100%;
+}
+/* Left Side Nav Bar class = vertical_nav */
+
+aside.vertical_nav {
+    background: rgba(251, 251, 251, 0.7);
+    border-radius: 10px;
+    margin: 0px 15px 15px 15px;
+    box-sizing: content-box;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+nav.vertical_nav img {
+    width: 40px;
+}
+
+nav.vertical_nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav h3 {
+    margin-top: 10px;
+}
+
+
+/* Default Figure Style */
+
+figure.description {
+    background: rgba(251, 251, 251, 0.7);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 5px;
+}
+
+figure img {
+    object-fit: cover;
+    width: 95%;
+    height: 95%;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+/* class = description styles -- primarily sections and figures */
+section.description h1 {
+    margin-top: 0px;
+}
+
+section.description {
+    background: rgba(251, 251, 251, 0.7);
+    border-radius: 10px;
+    margin: 15px;
+    margin-top: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+figure.description {
+    background: rgba(251, 251, 251, 0.7);
+    border-radius: 10px;
+    margin: 15px;
+    margin-top: 0px;
+    padding: 5px;
+}
+
+
+/*========
+Font Styles
+========*/
+html {
+    font-size: 24px;
+    color: rgb(64, 64, 64);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Nunito-ExtraBold';
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: 'Nunito-Bold';
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-family: 'Nunito-SemiBold';
+}
+
+h5 {
+    font-size: 1.15rem;
+    font-family: 'Nunito-Regular';
+}
+
+h6 {
+    font-family: 'Caveat';
+    font-weight: 1000;
+    font-size: 0.98rem;
+    margin: 0px;
+}
+
+p {
+    font-family: 'Nunito-Light';
+}
+
+p.extralight {
+    font-family: 'Nunito-ExtraLight';
+}
+
+dt {
+    font-family: 'Nunito-Medium';
+}
+
+dd {
+    font-family: 'Nunito-Light';
+}
+
+nav.vertical_nav ul, nav.vertical_nav ol {
+    font-family: 'Nunito-Medium';
+    line-height: 2rem;
+}
+
+
+li a:active {
+    color: purple;
+}
+
+
+/*=================
+Default Flex Styles
+=================*/
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+aside.vertical_nav {
+    flex: 1 0 10%;
+}
+
+footer {
+    flex: 10 0 90%;
+    display: flex;
+    flex-flow: row wrap;
+    max-height: 220px;
+}
+
+footer section {
+    max-height: 90px;
+}
+
+footer section#disclaimers {
+    flex: 1 0 200px;
+}
+
+footer section#socials {
+    flex: 1 0 225px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+footer section#socials a {
+    flex: 0 0 50px;
+}
+
+figure.description  {
+    flex: 2 0 30%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+section.description {
+    flex: 2 0 40%;
+    display: block;
+}
+
+@media screen and (max-width: 799px) {
+    html {
+        font-size: 20px;
+    }
+
+    figure.description {
+        flex: 1 0 80%;
+    }
+
+    section.description {
+        flex: 1 0 60%;
+    }
+}

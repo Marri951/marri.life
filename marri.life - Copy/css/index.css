@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/*
+    Purpose: serve as the style sheet for, specifically, index.html
+
+    Author: Marri Taylor
+
+    Date Initialized: 5-12-23 (5th of December 2023)
+    Date Last Editied: 8-12-23 (8th of December 2023)
+*/
+
+
+/* About me section id = description_of_marri */
+
+section.description {
+    margin: 0px;
+}
+
+section.description h1 {
+    margin-top: 0px;
+}
+
+section.description {
+    background: rgba(251, 251, 251, 0.7);
+    border-radius: 10px;
+    margin: 15px;
+    margin-top: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+figure.description {
+    background: rgba(251, 251, 251, 0.7);
+    border-radius: 10px;
+    margin: 15px;
+    margin-top: 0px;
+    padding: 5px;
+}
+
+figure img {
+    object-fit: cover;
+    width: 95%;
+    height: 95%;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    border: 10px double #a5c6fa;
+}
+
+form label {
+    font-size: 1.15rem;
+    font-family: 'Nunito-Regular';
+}
+
+div.formRow {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+form {
+    font-family: 'Nunito-Light';
+    text-align: center;
+}
+
+
+
+
+/*===========
+Flex Styles
+===========*/
+
+figure.description  {
+    flex: 2 0 30%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+section.description {
+    flex: 2 0 40%;
+    display: block;
+}
+
+section#form_contain {
+    flex: 2 0 90%;
+    display: flex;
+    justify-content: center;
+}
+
+section#form_contain form {
+    margin-bottom: 20px;
+}
+
+section#form_contain h4 {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 799px) {
+    html {
+        font-size: 20px;
+    }
+
+    figure.description {
+        flex: 1 0 80%;
+    }
+
+    section.description {
+        flex: 1 0 80%;
+    }
+}
